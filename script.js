@@ -5,29 +5,34 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Timer } from 'three/addons/misc/Timer.js';
 import { Sky } from 'three/examples/jsm/Addons.js';
 import floorAlphaTextureImage from './src/assets/floor/alpha.jpg'
-import floorColorTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_diff_1k.jpg'
-import floorARMTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_arm_1k.jpg'
-import floorNormalTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_nor_gl_1k.jpg'
-import floorDisplacementTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_disp_1k.jpg'
-import roofColorTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_diff_1k.jpg'
-import roofARMTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_arm_1k.jpg'
-import roofNormalTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_nor_gl_1k.jpg'
-import wallColorTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_diffuse_1k.jpg'
-import wallARMTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_arm_1k.jpg'
-import wallNormalTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_nor_gl_1k.jpg'
-import bushedColorTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_diff_1k.jpg'
-import bushesARMTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_arm_1k.jpg'
-import bushesNormalTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_nor_gl_1k.jpg'
-import graveColorTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_diff_1k.jpg'
-import graveARMTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_arm_1k.jpg'
-import graveNormalTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_nor_gl_1k.jpg'
-import doorColorTextureImage from './src/assets/door/color.jpg'
-import doorAlphaTextureImage from './src/assets/door/alpha.jpg'
-import doorAmbientOcclusionTextureImage from './src/assets/door/ambientOcclusion.jpg'
-import doorHeightTextureImage from './src/assets/door/height.jpg'
-import doorNormalTextureImage from './src/assets/door/normal.jpg'
-import doorMetalnessTextureImage from './src/assets/door/metalness.jpg'
-import doorRoughnessTextureImage from './src/assets/door/roughness.jpg'
+import floorColorTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_diff_1k.webp'
+import floorARMTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_arm_1k.webp'
+import floorNormalTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_nor_gl_1k.webp'
+import floorDisplacementTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_disp_1k.webp'
+
+import roofColorTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_diff_1k.webp'
+import roofARMTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_arm_1k.webp'
+import roofNormalTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_nor_gl_1k.webp'
+
+import wallColorTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_diffuse_1k.webp'
+import wallARMTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_arm_1k.webp'
+import wallNormalTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_nor_gl_1k.webp'
+
+import bushedColorTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_diff_1k.webp'
+import bushesARMTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_arm_1k.webp'
+import bushesNormalTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_nor_gl_1k.webp'
+
+import graveColorTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_diff_1k.webp'
+import graveARMTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_arm_1k.webp'
+import graveNormalTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_nor_gl_1k.webp'
+
+import doorColorTextureImage from './src/assets/door/color.webp'
+import doorAlphaTextureImage from './src/assets/door/alpha.webp'
+import doorAmbientOcclusionTextureImage from './src/assets/door/ambientOcclusion.webp'
+import doorHeightTextureImage from './src/assets/door/height.webp'
+import doorNormalTextureImage from './src/assets/door/normal.webp'
+import doorMetalnessTextureImage from './src/assets/door/metalness.webp'
+import doorRoughnessTextureImage from './src/assets/door/roughness.webp'
 
 
 
