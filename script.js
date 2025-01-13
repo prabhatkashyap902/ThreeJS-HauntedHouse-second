@@ -4,6 +4,32 @@ import './src/index.css'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Timer } from 'three/addons/misc/Timer.js';
 import { Sky } from 'three/examples/jsm/Addons.js';
+import floorAlphaTextureImage from './src/assets/floor/alpha.jpg'
+import floorColorTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_diff_1k.jpg'
+import floorARMTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_arm_1k.jpg'
+import floorNormalTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_nor_gl_1k.jpg'
+import floorDisplacementTextureImage from './src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_disp_1k.jpg'
+import roofColorTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_diff_1k.jpg'
+import roofARMTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_arm_1k.jpg'
+import roofNormalTextureImage from './src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_nor_gl_1k.jpg'
+import wallColorTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_diffuse_1k.jpg'
+import wallARMTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_arm_1k.jpg'
+import wallNormalTextureImage from './src/assets/house/brick_wall_001_1k/brick_wall_001_nor_gl_1k.jpg'
+import bushedColorTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_diff_1k.jpg'
+import bushesARMTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_arm_1k.jpg'
+import bushesNormalTextureImage from './src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_nor_gl_1k.jpg'
+import graveColorTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_diff_1k.jpg'
+import graveARMTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_arm_1k.jpg'
+import graveNormalTextureImage from './src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_nor_gl_1k.jpg'
+import doorColorTextureImage from './src/assets/door/color.jpg'
+import doorAlphaTextureImage from './src/assets/door/alpha.jpg'
+import doorAmbientOcclusionTextureImage from './src/assets/door/ambientOcclusion.jpg'
+import doorHeightTextureImage from './src/assets/door/height.jpg'
+import doorNormalTextureImage from './src/assets/door/normal.jpg'
+import doorMetalnessTextureImage from './src/assets/door/metalness.jpg'
+import doorRoughnessTextureImage from './src/assets/door/roughness.jpg'
+
+
 
 const gui = new GUI();
 
@@ -23,35 +49,35 @@ scene.add(sky)
 
 
 const textureLoader=new THREE.TextureLoader()
-const floorAlphaTexture=textureLoader.load('./src/assets/floor/alpha.jpg')
-const floorColorTexture=textureLoader.load('./src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_diff_1k.jpg')
-const floorARMTexture=textureLoader.load('./src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_arm_1k.jpg')
-const floorNormalTexture=textureLoader.load('./src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_nor_gl_1k.jpg')
-const floorDisplacementTexture=textureLoader.load('./src/assets/floor/brown_mud_leaves_01_1k/brown_mud_leaves_01_disp_1k.jpg')
+const floorAlphaTexture=textureLoader.load(floorAlphaTextureImage)
+const floorColorTexture=textureLoader.load(floorColorTextureImage)
+const floorARMTexture=textureLoader.load(floorARMTextureImage)
+const floorNormalTexture=textureLoader.load(floorNormalTextureImage)
+const floorDisplacementTexture=textureLoader.load(floorDisplacementTextureImage)
 
-const roofColorTexture=textureLoader.load('./src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_diff_1k.jpg')
-const roofARMTexture=textureLoader.load('./src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_arm_1k.jpg')
-const roofNormalTexture=textureLoader.load('./src/assets/house/clay_roof_tiles_03_1k/clay_roof_tiles_03_nor_gl_1k.jpg')
+const roofColorTexture=textureLoader.load(roofColorTextureImage)
+const roofARMTexture=textureLoader.load(roofARMTextureImage)
+const roofNormalTexture=textureLoader.load(roofNormalTextureImage)
 
-const wallColorTexture=textureLoader.load('./src/assets/house/brick_wall_001_1k/brick_wall_001_diffuse_1k.jpg')
-const wallARMTexture=textureLoader.load('./src/assets/house/brick_wall_001_1k/brick_wall_001_arm_1k.jpg')
-const wallNormalTexture=textureLoader.load('./src/assets/house/brick_wall_001_1k/brick_wall_001_nor_gl_1k.jpg')
+const wallColorTexture=textureLoader.load(wallColorTextureImage)
+const wallARMTexture=textureLoader.load(wallARMTextureImage)
+const wallNormalTexture=textureLoader.load(wallNormalTextureImage)
 
-const bushesColorTexture=textureLoader.load('./src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_diff_1k.jpg')
-const bushesARMTexture=textureLoader.load('./src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_arm_1k.jpg')
-const bushesNormalTexture=textureLoader.load('./src/assets/bushes/leaves_forest_ground_1k/leaves_forest_ground_nor_gl_1k.jpg')
+const bushesColorTexture=textureLoader.load(bushedColorTextureImage)
+const bushesARMTexture=textureLoader.load(bushesARMTextureImage)
+const bushesNormalTexture=textureLoader.load(bushesNormalTextureImage)
 
-const graveColorTexture=textureLoader.load('./src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_diff_1k.jpg')
-const graveARMTexture=textureLoader.load('./src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_arm_1k.jpg')
-const graveNormalTexture=textureLoader.load('./src/assets/graves/dry_riverbed_rock_1k/dry_riverbed_rock_nor_gl_1k.jpg')
+const graveColorTexture=textureLoader.load(graveColorTextureImage)
+const graveARMTexture=textureLoader.load(graveARMTextureImage)
+const graveNormalTexture=textureLoader.load(graveNormalTextureImage)
 
-const doorColorTexture = textureLoader.load('./src/assets/door/color.jpg')
-const doorAlphaTexture = textureLoader.load('./src/assets/door/alpha.jpg')
-const doorAmbientOcclusionTexture = textureLoader.load('./src/assets/door/ambientOcclusion.jpg')
-const doorHeightTexture = textureLoader.load('./src/assets/door/height.jpg')
-const doorNormalTexture = textureLoader.load('./src/assets/door/normal.jpg')
-const doorMetalnessTexture = textureLoader.load('./src/assets/door/metalness.jpg')
-const doorRoughnessTexture = textureLoader.load('./src/assets/door/roughness.jpg')
+const doorColorTexture = textureLoader.load(doorColorTextureImage)
+const doorAlphaTexture = textureLoader.load(doorAlphaTextureImage)
+const doorAmbientOcclusionTexture = textureLoader.load(doorAmbientOcclusionTextureImage)
+const doorHeightTexture = textureLoader.load(doorHeightTextureImage)
+const doorNormalTexture = textureLoader.load(doorNormalTextureImage)
+const doorMetalnessTexture = textureLoader.load(doorMetalnessTextureImage)
+const doorRoughnessTexture = textureLoader.load(doorRoughnessTextureImage)
 
 
 floorAlphaTexture.colorSpace=THREE.SRGBColorSpace
